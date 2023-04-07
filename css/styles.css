@@ -92,6 +92,12 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.open-menu {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -126,6 +132,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   transition: color 250ms var(--cubic);
+  text-decoration: none;
 }
 .link:hover,
 .link:focus {
@@ -135,6 +142,112 @@ img {
   color: var(--buttons-bgc-color);
 }
 
+.mobile-menu {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  right: 0;
+
+  padding: 40px;
+
+  overflow: auto;
+  background-color: var(--white);
+}
+
+.is-open {
+  display: block;
+}
+
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 16px;
+}
+
+.flex-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.social-menu {
+  width: calc((100% - 168px) / 4);
+}
+/* .navi {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+  transition: color 250ms var(--cubic);
+} */
+
+.mobile-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact {
+  display: block;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: var(--cubic);
+
+  color: var(--primary-text-color);
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--hover-focus-color);
+}
+
+.phone-number {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+.email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  /* margin-bottom: 48px; */
+}
+
+.mobile-socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  column-gap: 56px;
+}
+
+.mobile-address {
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 408px) {
+  .mobile-socials {
+    column-gap: 24px;
+  }
+}
 /* MOBILE HERO */
 
 .hero-section {
@@ -320,6 +433,7 @@ img {
 }
 
 .social-button {
+  display: block;
   width: 40px;
   height: 40px;
 
@@ -554,13 +668,13 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 428px;
+    max-width: 428px;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .navs {
+  .nav {
     display: none;
   }
 
