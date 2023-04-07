@@ -24,11 +24,9 @@
     <header class="site-header">
       <div class="container main-nav">
         <nav class="navigation">
-          <!-- logo -->
           <a href="./index.html" class="logo"
             >Web<span class="logo-web">studio</span></a
           >
-          <!-- nagivation list -->
           <ul class="nav list">
             <li class="item">
               <a href="./index.html" class="link">Studio</a>
@@ -39,7 +37,11 @@
             <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
-
+        <button type="buttton" class="button open-menu js-open-menu">
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
         <address class="address-list">
           <ul class="contacts list">
             <li class="item">
@@ -116,6 +118,7 @@
                       media="(min-width: 320px)"
                     />
                     <img
+                      class="example-image"
                       src="./images/portfolio/portfolio1.jpg"
                       alt="banking app"
                       width="360"
@@ -155,12 +158,13 @@
                     />
                     <source
                       srcset="
-                        ./images/mobile/cashless.jpg    1x,
-                        ./images/mobile/cashless@2x.jpg 2x
+                        ./images/mobile/cashless.jpg      1x,
+                        ./images/mobile/cashless@2x-5.jpg 2x
                       "
                       media="(min-width: 320px)"
                     />
                     <img
+                      class="example-image"
                       src="./images/portfolio/portfolio2.jpg"
                       alt="cashless payment"
                       width="360"
@@ -206,6 +210,7 @@
                       media="(min-width: 320px)"
                     />
                     <img
+                      class="example-image"
                       src="./images/portfolio/portfolio3.jpg"
                       alt="meditation app"
                       width="360"
@@ -251,6 +256,7 @@
                       media="(min-width: 320px)"
                     />
                     <img
+                      class="example-image"
                       src="./images/portfolio/portfolio4.jpg"
                       alt="taxi service"
                       width="360"
@@ -296,6 +302,7 @@
                       media="(min-width: 320px)"
                     />
                     <img
+                      class="example-image"
                       src="./images/portfolio/portfolio5.jpg"
                       alt="screen illustrations"
                       width="360"
@@ -342,6 +349,7 @@
                     />
                   </picture>
                   <img
+                    class="example-image"
                     src="./images/portfolio/portfolio6.jpg"
                     alt="online cources"
                     width="360"
@@ -386,6 +394,7 @@
                       media="(min-width: 320px)"
                     />
                     <img
+                      class="example-image"
                       src="./images/portfolio/portfolio7.jpg"
                       alt="insta stories concept"
                       width="360"
@@ -412,7 +421,7 @@
                     <source
                       srcset="
                         ./images/portfolio/portfolio8.jpg 1x,
-                        ./images/desktop/img-1@2x.jpg     2x
+                        ./images/desktop/img-1.jpg        2x
                       "
                       media="(min-width: 1200px)"
                     />
@@ -425,12 +434,13 @@
                     />
                     <source
                       srcset="
-                        ./images/mobile/organic.jpg   1x,
-                        ./images/mobile/organic2x.jpg 2x
+                        ./images/mobile/organic.jpg    1x,
+                        ./images/mobile/organic@2x.jpg 2x
                       "
                       media="(min-width: 320px)"
                     />
                     <img
+                      class="example-image"
                       src="./images/portfolio/portfolio8.jpg"
                       alt="organic food"
                       width="360"
@@ -457,7 +467,7 @@
                     <source
                       srcset="
                         ./images/portfolio/portfolio9.jpg 1x,
-                        ./images/desktop/img@2x.jpg       2x
+                        ./images/desktop/img.jpg          2x
                       "
                       media="(min-width: 1200px)"
                     />
@@ -476,6 +486,7 @@
                       media="(min-width: 320px)"
                     />
                     <img
+                      class="example-image"
                       src="./images/portfolio/portfolio9.jpg"
                       alt="fresh coffee"
                       width="360"
@@ -556,5 +567,73 @@
         </div>
       </div>
     </footer>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu js-menu-container">
+      <div class="container flex-container">
+        <div>
+          <button type="button" class="modal-btn js-close-menu">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-exit"></use>
+            </svg>
+          </button>
+          <ul class="mobile-list list">
+            <li class="item">
+              <a href="./index.html" class="link active">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li class="item"><a href="" class="link">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-contacts-wrap">
+          <address class="mobile-address">
+            <ul class="mobile-contacts list">
+              <li class="item">
+                <a href="tel:+110001111111" class="contact phone-number"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="contact email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-socials list">
+            <li class="social-menu">
+              <a href="" class="social-button">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-menu">
+              <a href="" class="social-button">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-menu">
+              <a href="" class="social-button">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-menu">
+              <a href="" class="social-button">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>

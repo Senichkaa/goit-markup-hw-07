@@ -701,7 +701,7 @@ img {
   padding: 48px 0;
 }
 
-.example-list.item {
+.example-list .item {
   margin-bottom: 48px;
 }
 
@@ -757,6 +757,9 @@ img {
   transition: transform 250ms var(--cubic);
 
   background-color: var(--social-button-color);
+}
+.example-image {
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
