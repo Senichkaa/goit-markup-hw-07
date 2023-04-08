@@ -181,10 +181,6 @@ img {
   padding-left: 0;
 }
 
-.social-menu {
-  /* width: calc((100% - 168px) / 4); */
-}
-
 .mobile-contacts {
   display: flex;
   flex-direction: column;
