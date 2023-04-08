@@ -1319,6 +1319,10 @@ img {
     gap: 40px;
   }
 
+  .contacts .item {
+    margin-bottom: 0px;
+  }
+
   .hero-section {
     max-width: 1440px;
     height: 600px;
